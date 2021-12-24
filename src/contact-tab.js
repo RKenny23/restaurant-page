@@ -12,15 +12,15 @@ function loadContactTab() {
   const location = document.createElement("div");
   location.innerHTML = `
       <h2>Location</h2>
-      <p>123 Strawberry St., Sugar City</p>
-      <p>Opening Hours: 8:00 AM - 20:00 PM</p>
+      <p>784 123 Spooner Ave., Middletown</p>
+      <p>Opening Hours: 11:00 AM - 10:00 PM</p>
   `;
 
   const cont = document.createElement("div");
   cont.innerHTML = `
       <h2>Contact</h2>
-      <p>Email: yourfavoritemuffin@email.com</p>
-      <p id="last">Call us: 123-567-890</p>
+      <p>Email: questions@babosakitchen.com</p>
+      <p id="last">Call us: 860-577-3125</p>
   `;
   contactWrapper.appendChild(location);
   contactWrapper.appendChild(cont);
