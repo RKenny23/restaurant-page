@@ -1,4 +1,4 @@
-import Logo from "./sombrero-mexican.svg";
+import Logo from "./img/sombrero-mexican.svg";
 // import footerLogo from "./mex-pattern.svg";
 import "./styles.css";
 
