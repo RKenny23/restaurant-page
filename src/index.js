@@ -3,7 +3,7 @@ import {
   loadLogo,
   createHeadline,
   createTabs,
-  createFooter,
+  createPattern,
 } from "./page-load";
 import { loadHomeTab } from "./home-tab";
 import { loadMenuTab } from "./menu-tab";
@@ -24,7 +24,7 @@ function handleSelection(e) {
 loadLogo();
 createHeadline();
 createTabs();
-createFooter();
+createPattern();
 
 loadHomeTab();
 

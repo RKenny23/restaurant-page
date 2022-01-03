@@ -1,9 +1,16 @@
+import homeImage from "./img/bistro.jpg";
+
 function loadHomeTab() {
   const content = document.getElementById("tabs-content");
 
   while (content.firstChild) {
     content.removeChild(content.firstChild);
   }
+
+  const img = document.createElement("img");
+  img.id = "home-img";
+  img.src = homeImage;
+  content.appendChild(img);
 
   const infoText = document.createElement("p");
 

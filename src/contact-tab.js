@@ -22,6 +22,7 @@ function loadContactTab() {
       <p>Email: questions@babosakitchen.com</p>
       <p id="last">Call us: 860-577-3125</p>
   `;
+  
   contactWrapper.appendChild(location);
   contactWrapper.appendChild(cont);
 }

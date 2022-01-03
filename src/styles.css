@@ -22,13 +22,33 @@ body {
   border-bottom-right-radius: 50px;
 }
 
-#content > img {
-  transform: scale(0.8);
+#logo {
+  max-width: 40%;
+  justify-content: center;
+  display: flex;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  #logo {
+    width: 20%;
+  }
+}
+
+#home-img {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: 800px;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
 #content > h1 {
   text-align: center;
   font-family: "Pacifico", cursive;
+  font-weight: 200;
   font-size: 3rem;
   color: #302f32;
   margin-top: 15px;
@@ -43,6 +63,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 #links > div {
   justify-self: center;
   padding: 20px;
@@ -63,37 +84,47 @@ h2 {
 }
 
 #tabs-content > p {
+  width: 800px;
   padding: 30px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   line-height: 2;
 }
 
-#menu-wrapper {
+#menu-grid {
   padding-top: 40px;
+  margin: 0 auto;
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-column-gap: 140px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+  grid-column-gap: 10px;
   grid-row-gap: 40px;
 }
 
-.menu-content {
+.menu-item {
   display: grid;
-  justify-content: center;
+  gap: 10px;
+  justify-items: center;
   padding: 20px 20px;
   text-align: center;
+  border: 1px solid black;
 }
 
-div.menu-content > img {
-  transform: scale(0.1);
+.menu-item > img {
+  width: 200px;
   border-radius: 30%;
   /* border: 5px solid white; */
+}
+
+.menu-item > p {
+  /* width: 200px; */
 }
 
 #contact-wrapper > div {
   text-align: center;
   padding-top: 20px;
 }
+
 #last {
   padding-bottom: 30px;
   margin-bottom: 0;
