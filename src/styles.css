@@ -56,6 +56,7 @@ body {
 
 h2 {
   font-family: "Pacifico", cursive;
+  font-weight: 200;
   margin-top: 0;
 }
 
@@ -98,7 +99,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
   grid-column-gap: 10px;
-  grid-row-gap: 40px;
+  grid-row-gap: 20px;
 }
 
 .menu-item {
@@ -107,7 +108,7 @@ h2 {
   justify-items: center;
   padding: 20px 20px;
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .menu-item > img {
@@ -117,7 +118,7 @@ h2 {
 }
 
 .menu-item > p {
-  /* width: 200px; */
+  width: 300px;
 }
 
 #contact-wrapper > div {
@@ -129,3 +130,21 @@ h2 {
   padding-bottom: 30px;
   margin-bottom: 0;
 }
+
+/* #pattern {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50px;
+  left: 8px;
+  background-color: green;
+  transform: rotate(45deg);
+} */
+
+/* #pattern {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-color: green;
+  transform: rotate(45deg);
+} */

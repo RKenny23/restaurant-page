@@ -1,5 +1,4 @@
 import Logo from "./img/sombrero-mexican.svg";
-// import footerLogo from "./mex-pattern.svg";
 import "./styles.css";
 
 const content = document.getElementById("content");
@@ -11,11 +10,11 @@ function loadLogo() {
   content.appendChild(img);
 }
 
-function createHeadline() {
-  const headLine = document.createElement("h1");
-  headLine.innerText = "Babosa Kitchen";
+function createHeader() {
+  const header = document.createElement("h1");
+  header.innerText = "Babosa Kitchen";
 
-  content.appendChild(headLine);
+  content.appendChild(header);
 }
 
 function createTabs() {
@@ -50,19 +49,19 @@ function createTabs() {
   content.appendChild(tabsContainer);
 }
 
-// function createFooter() {
-//   const footer = document.createElement("div");
-//   footer.id = "footer";
-//   const footerImg = new Image();
-//   footerImg.src = footerLogo;
-//   footer.appendChild(footerImg);
-//   content.appendChild(footer);
-// }
-
 function createPattern() {
-  const pattern = document.createElement("div");
-  pattern.id = "pattern";
-  content.appendChild(pattern);
+  for (let i = 0; i < 13; i++) {
+    const pattern = document.createElement("div");
+    pattern.id = "pattern";
+    // pattern.style.top = `${i * 100}px`;
+    content.appendChild(pattern);
+  }
 }
 
-export { loadLogo, createHeadline, createTabs, createPattern };
+// function createPattern() {
+//   const pattern = document.createElement("div");
+//   pattern.id = "pattern";
+//   content.appendChild(pattern);
+// }
+
+export { loadLogo, createHeader, createTabs, createPattern };

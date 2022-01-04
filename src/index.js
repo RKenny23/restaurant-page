@@ -1,7 +1,7 @@
 import "./styles.css";
 import {
   loadLogo,
-  createHeadline,
+  createHeader,
   createTabs,
   createPattern,
 } from "./page-load";
@@ -22,7 +22,7 @@ function handleSelection(e) {
 }
 
 loadLogo();
-createHeadline();
+createHeader();
 createTabs();
 createPattern();
 
